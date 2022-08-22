@@ -1,0 +1,518 @@
+body {
+  background-image: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  background-attachment:fixed;
+  height:100%;
+  color: white;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.top {
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 20px;
+  padding: 1%;
+  float: right;
+}
+
+.left {
+  display: inline;
+  float: left;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 250%;
+  line-height: 80%;
+}
+
+.left p {
+  margin: 0%;
+}
+
+.right {
+  display: inline;
+  width: 17%;
+  float: right;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2%;
+  text-align: center;
+  margin: auto;
+}
+
+.score {
+  color: hsl(229, 64%, 46%);
+  margin: 1%;
+}
+
+.score-num {
+  font-size: 400%;
+  margin: 0%;
+  color: hsl(217, 16%, 45%);
+  font-weight: bold;
+}
+
+.scissors-div {
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.scissors {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 20px solid hsl(39, 89%, 49%);
+  border-radius: 50%;
+}
+
+.scissors:active {
+  border: 20px solid hsl(40, 84%, 53%);
+}
+
+.paper-div {
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.paper {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 20px solid hsl(230, 89%, 62%);
+  border-radius: 50%;
+}
+
+.paper:active {
+  border: 20px solid hsl(230, 89%, 65%);
+}
+
+.rock-div {
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.rock {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 20px solid hsl(349, 71%, 52%);
+  border-radius: 50%;
+}
+
+.rock:active {
+  border: 20px solid hsl(349, 70%, 56%);
+}
+
+.rules {
+  padding: 0.7% 2.5%;
+  border: 2px solid white;
+  border-radius: 10px;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
+.attribution {
+  padding: 0.5% 2%;
+  font-size: 14px;
+}
+
+.attribution a {
+  color: hsl(217, 16%, 45%);
+}
+
+.rules-page {
+  background-color: white;
+  color: hsl(229, 25%, 31%);
+  padding: 2%;
+  font-size: 25px;
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.rules-img {
+  margin-top: 10%;
+}
+
+.main-table {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.main-table th, td {
+  padding: 5%;
+}
+
+.choose-scissors-div {
+  background-color: white;
+  position: absolute;
+  padding: 50px;
+  height: 50px;
+  border: 20px solid hsl(39, 89%, 49%);
+  border-radius: 50%;
+}
+
+.choose-paper-div {
+  background-color: white;
+  position: absolute;
+  padding: 50px;
+  height: 50px;
+  border: 20px solid hsl(230, 89%, 62%);
+  border-radius: 50%;
+}
+
+.choose-rock-div {
+  background-color: white;
+  position: absolute;
+  padding: 50px;
+  height: 50px;
+  border: 20px solid hsl(349, 71%, 52%);
+  border-radius: 50%;
+}
+
+.demo {
+  background-color: hsl(237, 40%, 15%);
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 2.5% 8%;
+}
+
+.winner {
+  position: absolute;
+  width: 250px;
+  text-align: center;
+  bottom: 10%;
+  left: 38%;
+  display: none;
+}
+
+.result {
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 1%;
+}
+
+.again {
+  padding: 3% 10%;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 10px;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
+@media (min-width: 600px) {
+  .top {
+    margin: 1% 25% 10% 25%;
+    width: 45%;
+  }
+
+  .main img {
+    margin: auto;
+    display: block;
+  }
+
+  .scissors-div {
+    top: 32%;
+    right: 32%;
+  }
+
+  .paper-div {
+    top: 32%;
+    left: 32%;
+  }
+
+  .rock-div {
+    top: 70%;
+    right: 44%;
+  }
+
+  .rules {
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 2%;
+    left: 3%;
+  }
+
+  .rules-page {
+    border-radius: 10px;
+    width: 310px;
+    height: 320px;
+  }
+
+  .close {
+    float: right;
+  }
+}
+
+@media (max-width: 1300px) {
+  .scissors-div {
+    top: 30%;
+    right: 30%;
+  }
+
+  .paper-div {
+    top: 30%;
+    left: 30%;
+  }
+
+  .rock-div {
+    bottom: 20%;
+    right: 43%;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 800px) {
+  .scissors-div {
+    top: 25%;
+    right: 25%;
+  }
+
+  .paper-div {
+    top: 25%;
+    left: 25%;
+  }
+
+  .rock-div {
+    bottom: 35%;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+  .scissors-div {
+    top: 20%;
+    right: 20%;
+  }
+
+  .paper-div {
+    top: 20%;
+    left: 20%;
+  }
+
+  .rock-div {
+    bottom: 40%;
+    right: 40%;
+  }
+
+  .choose-scissors-div {
+    padding: 30px;
+    height: 30px;
+  }
+
+  .choose-paper-div {
+    padding: 30px;
+    height: 30px;
+  }
+
+  .choose-rock-div {
+    padding: 30px;
+    height: 30px;
+  }
+
+  .winner {
+    left: 30%;
+    bottom: 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .top {
+    width: 80%;
+    float: left;
+    border-radius: 7px;
+    margin: 5%;
+    margin-left: 10%;
+    margin-bottom: 40%;
+  }
+
+  .left {
+    font-size: 120%;
+    margin: 3%;
+  }
+
+  .right {
+    width: 20%;
+    border-radius: 5px;
+    margin: 1%;
+  }
+
+  .score {
+    font-size: 15px;
+    margin-top: 1%;
+  }
+
+  .score-num {
+    font-size: 250%;
+  }
+
+  .triangle {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    display: block;
+  }
+
+  .scissors-div {
+    top: 30%;
+    right: 10%;
+    height: 120px;
+    width: 120px;
+  }
+
+  .paper-div {
+    top: 30%;
+    left: 10%;
+    height: 120px;
+    width: 120px;
+  }
+
+  .rock-div {
+    bottom: 25%;
+    right: 35%;
+    height: 120px;
+    width: 120px;
+  }
+
+  .rules {
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 3%;
+    left: 7%;
+  }
+
+  .rules-page {
+    text-align: center;
+  }
+
+  .rules-page-top {
+    margin: 10%;
+  }
+
+  .close {
+    margin-left: 60%;
+  }
+
+  .main-table {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .choose-scissors-div {
+    padding: 20px;
+    left: 8%;
+  }
+
+  .choose-paper-div {
+    padding: 20px;
+    left: 8%;
+  }
+
+  .choose-rock-div {
+    padding: 20px;
+    left: 8%;
+  }
+
+  .demo {
+    background-color: transparent;
+  }
+
+  .winner {
+    bottom: 25%;
+    left: 20%;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 460px) {
+  .top {
+    margin-bottom: 15%;
+  }
+
+  .scissors-div {
+    top: 22%;
+    right: 8%;
+  }
+
+  .paper-div {
+    top: 22%;
+    left: 8%;
+  }
+
+  .rock-div {
+    bottom: 20%;
+    right: 37%;
+  }
+}
+
+@media (max-width: 460px) and (min-width: 390px) {
+  .scissors-div {
+    top: 35%;
+    right: 8%;
+  }
+
+  .paper-div {
+    top: 35%;
+    left: 8%;
+  }
+
+  .rock-div {
+    bottom: 15%;
+    right: 35%;
+  }
+}
+
+@media (max-width: 350px) {
+  .scissors-div {
+    top: 30%;
+    right: 8%;
+  }
+
+  .paper-div {
+    top: 30%;
+    left: 8%;
+  }
+
+  .rock-div {
+    bottom: 30%;
+    right: 30%;
+  }
+
+  .winner {
+    left: 13%;
+  }
+}

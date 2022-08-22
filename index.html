@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+  <div class="top" id="top">
+    <div class="left">
+      <p>ROCK</p>
+      <p>PAPER</p>
+      <p>SCISSORS</p>
+    </div>
+    <div class="right">
+      <p class="score">SCORE</p>
+      <p class="score-num" id="score-num">0</p>
+    </div>
+  </div>
+  <div class="main" id="main">
+    <img src="images/bg-triangle.svg" alt="triangle" class="triangle">
+    <div class="paper-div">
+      <img src="images/icon-paper.svg" alt="paper" class="paper" id="paper">
+    </div>
+    <div class="scissors-div">
+      <img src="images/icon-scissors.svg" alt="scissors" class="scissors" id="scissors">
+    </div>
+    <div class="rock-div">
+      <img src="images/icon-rock.svg" alt="rock" class="rock" id="rock">
+    </div>
+  </div>
+  <div class="winner" id="winner">
+    <p class="result" id="result">YOU WIN!</p>
+    <button type="button" name="button" class="again" id="again">PLAY AGAIN</button>
+  </div>
+  <p class="rules" id="rules">Rules</p>
+  <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> . Coded by <a href="#">Golsa.Vl</a> .</p>
+  <div class="rules-page" id="rules-page">
+  <div class="rules-page-top">
+    <span class="rules-p" id="rules-p">Rules</span>
+    <img src="images/icon-close.svg" alt="close" class="close">
+  </div>
+  <img src="images/image-rules.svg" alt="rules" class="rules-img" id="rules-img">
+</div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
